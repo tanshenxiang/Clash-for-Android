@@ -64,6 +64,7 @@ jobs:
         uses: Devofure/advance-android-version-actions@v1.6.1
         with:
           gradlePath: build.gradle.kts
+          versionStage: "release"
           versionCode: ${{ steps.process-version.outputs.versonCode }}
           versionName: ${{ steps.process-version.outputs.versonName }}
       
